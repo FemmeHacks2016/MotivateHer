@@ -20,7 +20,9 @@
 		<h1>MotivateHer</h1>
 		<h3>Where your goals become reality!</h3>
 		<br>
-		<h3>Goals</h3>
+		<div class="goalsTitle">
+			<h3>Goals</h3>
+		</div>
 
 	</div>
 
@@ -34,5 +36,55 @@
 		</ul>
 
 	</div>
+	<div class ="container">
+	<h3>Your Goals</h3>
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>Title</th>
+				<th>Category</th>
+				<th>Link</th>
+				<th>Progress</th>
+			</tr>
+		</thead>
+		<tbody id="goals">
+
+		</tbody>
+	</table>
+
+	<h3>Submit a Talk</h3>
+	<form id="goalForm">
+		<div class="form-group">
+			<label for ="goalTitle">Title</label>
+			<input class="form-control" id="goalTitle" placeholder="Title of Goal">
+		</div>
+		<div class="form-group">
+			<label for="goalCategory">Category</label>
+			<select id="goalCategory" class="form-control">
+ 				 <option value="exercise">Exercise</option>
+ 				 <option value="food">Food</option>
+	 			 <option value="habits">Habits</option>
+ 				 <option value="humanities">Humanities</option>
+ 				 <option value="technology">Technology</option>
+ 				 <option value="science">Science</option>
+ 				 <option value="crafts">Crafts</option>
+ 				 <option value="culinary">Culinary</option>
+ 				 <option value="music">Music</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label for="goalLink">Link</label>
+			<input type="url" class="form-control" id="goalLink" placeholder="Link for goal reference">
+		</div>
+		<div class="form-group">
+			<label for "goalFrequency">Frequency of Goal</label>
+			<input class="form-control" id="goalFrequency" placeholder="x hrs per week" type="number">
+		</div>
+
+		<button type="submit" class ="btn btn-default">Submit</button>
+	</form>
+</div>
+
+
 </body>
 </html>
