@@ -5,7 +5,7 @@ var myFirebaseApp = "motivateher";
 
 var url = new Firebase("https://" + myFirebaseApp + ".firebaseio.com/");
 var goals = url.child("goals");
-var categories = url.child("categories");
+var categories = url.child("goals/categories");
 
 var submitGoal = function(){
 	var title = $("#goalTitle").val();
@@ -15,6 +15,7 @@ var submitGoal = function(){
 
 	goals.push({
 		"title": title,
+		"link":link,
 		"category": "health",
 		"progress": {
 			"frequency": frequency,
@@ -24,6 +25,17 @@ var submitGoal = function(){
 	});
 
 };
+
+goals.set({
+	"info": {
+		"title" : "",
+		"link": ""
+	},
+	"progress:": {
+		"frequency": "",
+		"total": ""
+	}
+});
 
 categories.set({
 	"health": {"subcategories": ["exercise", "food", "habits"]},
