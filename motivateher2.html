@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>MotivateHer</title>
+	<link rel="stylesheet" href="stylesheet.css" type="text/css">
+	<meta name="description" content="Motivational website to help you achieve daily goals.">
+	<meta name="keywords" content="Motivation, women, goals, inspiration, education">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<script type=text/javascript>
+	function init() {
+		
+	}
+
+	function save(elem) {
+		console.log(elem);
+		console.log('row: ' + elem.className);
+		console.log('rating: ' + elem.value);
+	}	
+
+	window.onload = init;
+
+</script>
+</head>
+
+<body>
+	<div class="title">
+		<h1>MotivateHer</h1>
+		<h3>Where your goals become reality!</h3>
+		<br>
+	
+<div class="section">
+<h2>Exercise</h2>
+<p>Pain is temporary, pride is forever.</p>
+	</div>
+<div class="text">
+We are here to help you find useful resources!
+<br>
+<table class="table">
+  <tr><td>1. <a href="http://fitbottomedgirls.com/">Fit Bottomed Girls</a></td><td>Originally conceived as a blog idea,  Jennipher Walters and Erin Whitehead have turned FBG into a mini-empire that includes the sister site Fit-Bottomed Mamas, weekly newsletters, online fitness classes, videos, and more. The FBG team believes that fit bottoms come in all shapes and sizes, and that good health is about more than just losing weight.</td><td><span class="star-rating">
+  <input class="FBG" onclick="save(this)" type="radio" name="rating" value="1"><i></i>
+  <input class="FBG" onclick="save(this)" type="radio" name="rating" value="2"><i></i>
+  <input class="FBG" onclick="save(this)" type="radio" name="rating" value="3"><i></i>
+  <input class="FBG" onclick="save(this)" type="radio" name="rating" value="4"><i></i>
+  <input class="FBG" onclick="save(this)" type="radio" name="rating" value="5"><i></i>
+</span></td></tr>
+<tr><td>2. <a href="http://furthermore.equinox.com/">Furthermore from Equinox</a></td><td> The site is updated daily with fitness, nutrition, and healthy living news, and everything you see on Futhermore By Equniox is vetted by industry experts.</td><td><span class="star-rating">
+  <input class="Futhermore" onclick="save(this)" type="radio" name="rating" value="1"><i></i>
+  <input class="Futhermore" onclick="save(this)" type="radio" name="rating" value="2"><i></i>
+  <input class="Futhermore" onclick="save(this)" type="radio" name="rating" value="3"><i></i>
+  <input class="Futhermore" onclick="save(this)" type="radio" name="rating" value="4"><i></i>
+  <input class="Futhermore" onclick="save(this)" type="radio" name="rating" value="5"><i></i>
+</span></td></tr>
+<tr><td>3. <a href="http://www.thegreatfitnessexperiment.com/">The Great Fitness Experiment</a></td><td>Writer and fitness junkie Charlotte Andersen spent a year trying every single workout trend she could get her hands on and documenting what worked, what didn't, and what she learned. The Great Fitness Experiment, a hilarious, fresh, in-your-face, and completely honest outlook on the health and fitness industry that's rarely seen.</td><td><span class="star-rating">
+  <input class="TGFE" onclick="save(this)" type="radio" name="rating" value="1"><i></i>
+  <input class="TGFE" onclick="save(this)" type="radio" name="rating" value="2"><i></i>
+  <input class="TGFE" onclick="save(this)" type="radio" name="rating" value="3"><i></i>
+  <input class="TGFE" onclick="save(this)" type="radio" name="rating" value="4"><i></i>
+  <input class="TGFE" onclick="save(this)" type="radio" name="rating" value="5"><i></i>
+</span></td></tr>
+</table>
+<table class="table">
+<tr><td><img src="http://images.shape.mdpcdn.com/sites/shape.com/files/styles/slide/public/fitbottomed-girls-700_0.jpg?itok=ocPXfmFK"/></td><td><img src="http://images.shape.mdpcdn.com/sites/shape.com/files/styles/slide/public/q-by-equinox-700_0.jpg?itok=6cJTs5yR"/></td><td><img src="http://images.shape.mdpcdn.com/sites/shape.com/files/styles/slide/public/great-fitnesse-experiment-700_0.jpg?itok=3WKu5rD3"/></td></tr>
+</table>
+<button type="button" class="btn btn-primary">Create a goal</button>
