@@ -1,5 +1,11 @@
-.title{
+
+body{
+	font-family: 'Raleway';
 	margin: 50px;
+}
+
+.title{
+	
 	text-align: center;
 	font-family: "Zapf Chancery", cursive, bold;
 
@@ -30,6 +36,11 @@
 	width: 20%;
 	position: relative;
 }
+
+.navbar {
+	margin-top: 10px;
+}
+
 
 #container-fluid li a:hover {
 	color: #ffffff;
@@ -67,7 +78,3 @@
  	font-family: cursive;
  	text-align: center;
  }
-
-.dropdown {
-	text-align: center;
-}

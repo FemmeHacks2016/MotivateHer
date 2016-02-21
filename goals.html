@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>MotivateHer</title>
+	<script src="https://cdn.firebase.com/js/client/2.4.0/firebase.js"></script>
+
+    <!-- Load the jQuery library, which we'll use to manipulate HTML elements with Javascript. -->
+    <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+
+    <!-- Load Bootstrap stylesheet, which will is CSS that makes everything prettier and also responsive (aka will work on all devices of all sizes). -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="stylesheet.css" type="text/css">
+	<meta name="description" content="Motivational website to help you achieve your daily goals.">
+	<meta name="keywords" content="Motivation, women, goals, inspiration">
+</head>
+
+<body>
+	<script src="application.js"></script>
+	<div class="title">
+		<h1>MotivateHer</h1>
+		<h3>Where your goals become reality!</h3>
+		<br>
+		<div class="goalsTitle">
+			<h3>Goals</h3>
+		</div>
+
+	</div>
+
+	<div id="navbar">
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="goals.html">Goals</a></li>
+			<li><a href="health.html">Health</a></li>
+			<li><a href="education.html">Education</a></li>
+			<li><a href="skills.html">Skills</a></li>
+		</ul>
+
+	</div>
+	<div class ="container">
+	<h3>Your Goals</h3>
+	<table class="table table-striped">
+		<thead>
+			<tr>
+				<th>Title</th>
+				<th>Category</th>
+				<th>Link</th>
+				<th>Progress</th>
+			</tr>
+		</thead>
+		<tbody id="goals">
+
+		</tbody>
+	</table>
+
+	<h3>Submit a Talk</h3>
+	<form id="goalForm">
+		<div class="form-group">
+			<label for ="goalTitle">Title</label>
+			<input class="form-control" id="goalTitle" placeholder="Title of Goal">
+		</div>
+		<div class="form-group">
+			<label for="goalCategory">Category</label>
+			<select id="goalCategory" class="form-control">
+ 				 <option value="exercise">Exercise</option>
+ 				 <option value="food">Food</option>
+	 			 <option value="habits">Habits</option>
+ 				 <option value="humanities">Humanities</option>
+ 				 <option value="technology">Technology</option>
+ 				 <option value="science">Science</option>
+ 				 <option value="crafts">Crafts</option>
+ 				 <option value="culinary">Culinary</option>
+ 				 <option value="music">Music</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label for="goalLink">Link</label>
+			<input type="url" class="form-control" id="goalLink" placeholder="Link for goal reference">
+		</div>
+		<div class="form-group">
+			<label for "goalFrequency">Frequency of Goal</label>
+			<input class="form-control" id="goalFrequency" placeholder="x hrs per week" type="number">
+		</div>
+
+		<button type="submit" class ="btn btn-default">Submit</button>
+	</form>
+</div>
+
+
+</body>
+</html>
