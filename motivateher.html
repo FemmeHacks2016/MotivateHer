@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<head>
+	<meta charset="UTF-8">
+	<title>MotivateHer</title>
+	<link rel="stylesheet" href="stylesheet.css" type="text/css">
+	<meta name="description" content="Motivational website to help you achieve daily goals.">
+	<meta name="keywords" content="Motivation, women, goals, inspiration, education">
+<!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+<script type=text/javascript>
+	function init() {
+		
+	}
+
+	function save(elem) {
+		console.log(elem);
+		console.log('row: ' + elem.className);
+		console.log('rating: ' + elem.value);
+	}	
+
+	window.onload = init;
+
+</script>
+</head>
+
+<body>
+	<div class="title">
+		<h1>MotivateHer</h1>
+		<h3>Where your goals become reality!</h3>
+		<br>
+	
+<div class="section">
+<h2>Technology</h2>
+<p>Discover your inner programmer.</p>
+	</div>
+<div class="text">
+We are here to help you find useful resources!
+<br>
+<table class="table">
+  <tr><td>1. <a href="http://www.codecademy.com">Code Academy</a></td><td>Unlike some of these other online education platforms, Codeacademy focuses solely on teaching coding. You can choose from courses grouped into eight tracks: APIs, Ruby, Python, JavaScript, jQuery, PHP, web fundamentals, or combine languages into projects.</td><td><span class="star-rating">
+  <input class="codeAcademy" onclick="save(this)" type="radio" name="rating" value="1"><i></i>
+  <input class="codeAcademy" onclick="save(this)" type="radio" name="rating" value="2"><i></i>
+  <input class="codeAcademy" onclick="save(this)" type="radio" name="rating" value="3"><i></i>
+  <input class="codeAcademy" onclick="save(this)" type="radio" name="rating" value="4"><i></i>
+  <input class="codeAcademy" onclick="save(this)" type="radio" name="rating" value="5"><i></i>
+</span></td></tr>
+<tr><td>2. <a href="http://learnpythonthehardway.org/">Learn Python the Hard Way</a></td><td>Learn Python the Hard Way offers free PDFs, though, if you want to take the video version of the course, you'll need to fork up $29.
+What does learning the "Hard Way" mean? The number-one rule is that you can't copy-paste; you must type out each of the lessons in order to teach your hands the language.</td><td><span class="star-rating">
+  <input class="learnPython" onclick="save(this)" type="radio" name="rating" value="1"><i></i>
+  <input class="learnPython" onclick="save(this)" type="radio" name="rating" value="2"><i></i>
+  <input class="learnPython" onclick="save(this)" type="radio" name="rating" value="3"><i></i>
+  <input class="learnPython" onclick="save(this)" type="radio" name="rating" value="4"><i></i>
+  <input class="learnPython" onclick="save(this)" type="radio" name="rating" value="5"><i></i>
+</span></td></tr>
+<tr><td>3. <a href="https://www.udacity.com/">Udacity</a></td><td>Udacity believes today's higher education system is broken. Education is no longer something that happens once in a lifetime, but rather is a lifelong experience. That's why it has ported loads of computer science, math and physics courses online.</td><td><span class="star-rating">
+  <input class="Udacity" onclick="save(this)" type="radio" name="rating" value="1"><i></i>
+  <input class="Udacity" onclick="save(this)" type="radio" name="rating" value="2"><i></i>
+  <input class="Udacity" onclick="save(this)" type="radio" name="rating" value="3"><i></i>
+  <input class="Udacity" onclick="save(this)" type="radio" name="rating" value="4"><i></i>
+  <input class="Udacity" onclick="save(this)" type="radio" name="rating" value="5"><i></i>
+</span></td></tr>
+</table>
+<table class="table">
+<tr><td><img src="http://cmxhub.com/wp-content/uploads/job_listings/2015/08/CC_Logotype_Lockup_Blue.png"/></td><td><img src="http://images.techiezlounge.com/post/2014/11/Learn-Python-the-hard-way.png"/></td><td><img src="http://2013.europe.wordcamp.org/files/2013/06/treehouse-logo31.jpg"/></td></tr>
+</table>
+<button type="button" class="btn btn-primary">Create a goal</button>
