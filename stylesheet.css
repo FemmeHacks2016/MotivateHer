@@ -1,11 +1,73 @@
-body{
-	font-family: 'Raleway';
-}
 .title{
 	margin: 50px;
 	text-align: center;
+	font-family: "Zapf Chancery", cursive, bold;
+
 }
 
-h1{
-	color: red;
+.title h1 {
+	color: #cc0066;
+}
+
+
+#navbar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	text-align: center;
+	font-weight: bold;
+	font-size: 16px;
+}
+#navbar ul{
+	width: 90%;
+	position: fixed;
+	top: 140;
+}
+
+#navbar li {
+	display: inline;
+	float: left;
+	width: 20%;
+	position: relative;
+}
+
+#container-fluid li a:hover {
+	color: #ffffff;
+	background-color: #cc0066;
+}
+
+#navbar li a:link {
+	text-decoration: none;
+}
+
+#navbar li a:visited {
+	a:visited: #000099;
+}
+
+#navbar li a {
+	display: block;
+	padding: 8px;
+	width: 100%;
+	background-color: #ffe6f2;
+	color: #000099;
+}
+
+#goalsmenu li {
+	float: inherit;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+ }
+
+ ul.nav a:hover { color: #cc0066 !important; }
+
+ #quote {
+ 	font-family: cursive;
+ 	text-align: center;
+ }
+
+.dropdown {
+	text-align: center;
 }

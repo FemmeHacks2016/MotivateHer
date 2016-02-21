@@ -1,7 +1,12 @@
 <html>
 <head>
 	<link rel="stylesheet" href="stylesheet.css" type="text/css">
-	<meta name="description" content="Motivational website to help you achieve your daily goals.">
+	<script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+	<script src="javascript.js"></script>
+	<meta name="description" content="MotivateHer is a motivational website to help you achieve your daily goals.">
 	<meta name="keywords" content="Motivation, women, goals, inspiration">
 </head>
 
@@ -11,15 +16,108 @@
 		<h3>Where your goals become reality!</h3>
 	</div>
 
+	<!--
 	<div id="navbar">
-		<ul>
+		<ul class= "nav">
+			<li><a href="index.html">Home</a></li>
+			<li><a href="goals.html" onMouseover="drop('goalsmenu')" onMouseout="hide('goalsmenu')">Goals</a></li>
+				<ul id="goalsmenu" >
+					<li><a href="newgoal.html">New Goal</a></li>
+					<li><a href="progress.html">Check Progress</a></li>
+				</ul>
+			<li><a href="health.html" onMouseover="drop('healthmenu')" onMouseout="hide('healthmenu')">Health</a></li>
+				<ul id="healthmenu" class="dropmenu" style="display:none">
+					<li><a href="fitness.html">Fitness</a></li>
+					<li><a href="food.html">Food</a></li>
+				</ul>			
+			<li><a href="education.html" onMouseover="drop('educationmenu')" onMouseout="hide('educationmenu')">Education</a></li>
+				<ul id="educationmenu" class="dropmenu" style="display:none">
+					<li><a href="humanities.html">Humanities</a></li>
+					<li><a href="technology.html">Technology</a></li>
+				</ul>
+			<li><a href="skills.html" onMouseover="drop('skillsmenu')" onMouseout="hide('skillsmenu')">Skills</a></li>
+				<ul id="skillsmenu" class="dropmenu" style="display:none">
+					<li><a href="crafts.html">Crafts</a></li>
+					<li><a href="music.html">Music</a></li>
+				</ul>
+		</ul> -->
+			<!--	<ul>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="goals.html">Goals</a></li>
+				<ul>
+					<li><a href="newgoal.html">New Goal</a></li>
+					<li><a href="progress.html">Check Progress</a></li>
+				</ul>
 			<li><a href="health.html">Health</a></li>
+				<ul>
+					<li><a href="fitness.html">Fitness</a></li>
+					<li><a href="cooking.html">Cooking</a></li>
+				</ul>
 			<li><a href="education.html">Education</a></li>
+				<ul>
+					<li><a href="languages.html">Languages</a></li>
+					<li><a href="coding.html">Coding</a></li>
+				</ul>
 			<li><a href="skills.html">Skills</a></li>
-		</ul>
+				<ul>
+					<li><a href="knitting.html">Knitting</a></li>
+					<li><a href="music.html">Music</a></li>
+				</ul>
+		</ul>-->
 
 	</div>
+
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1" style="background-color:#ffe6f2">
+      <ul class="nav navbar-nav" style="margin-left: 32vw;">
+        <li class="dropdown">
+          <a href="index.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: #000099; font-size: 19px">Home</a>
+        </li>
+        <li class="dropdown">
+          <a href="goals.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: #000099; font-size: 19px">Goals</a></a>
+          <ul class="dropdown-menu">
+            <li><a href="newgoal.html">New Goal</a></li>
+			<li><a href="progress.html">Check Progress</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a href="health.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: #000099; font-size: 19px">Health</a>
+          <ul class="dropdown-menu">
+            <li><a href="exercise.html">Exercise</a></li>
+			<li><a href="food.html">Food</a></li>
+          </ul>
+        </li>
+         <li class="dropdown">
+          <a href="education.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: #000099; font-size: 19px">Education</a>
+          <ul class="dropdown-menu">
+            <li><a href="humanities.html">Humanities</a></li>
+			<li><a href="technology.html">Technology</a></li>
+          </ul>
+        </li>
+         <li class="dropdown">
+          <a href="skills.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false" style="color: #000099; font-size: 19px">Skills</a>
+          <ul class="dropdown-menu">
+            <li><a href="crafts.html">Crafts</a></li>
+			<li><a href="music.html">Music</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<br>
+<br>
+
+<div id="quote">
+	<h4>"Our greatest weakness lies in giving up. The most certain way to succeed is always to try just one more time."</h4>
+	<h4>-Thomas A. Edison</h4>
+</div>
+
 </body>
 </html>
