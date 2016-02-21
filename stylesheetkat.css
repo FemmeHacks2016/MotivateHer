@@ -1,12 +1,20 @@
-.title{
-text-align:center;
-}
+
 .section {
 background: #009973;
 	color: #ffffff; 
 text-align: center;
 } 
 
+.title{
+  
+  text-align: center;
+  font-family: "Zapf Chancery", cursive, bold;
+
+}
+
+.title h1 {
+  color: #cc0066;
+}
 
 
 p {
